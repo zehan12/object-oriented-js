@@ -1,4 +1,4 @@
-1_create object and method and this keyword:
+// 1_create object and method and this keyword:
 
 var userOne = {
     email: 'ryu@ninjas.com',
@@ -14,7 +14,7 @@ var userOne = {
 userOne.login();
 userOne.logout();
 
-2_accessing and updating the value and store key in variable and access it :
+// 2_accessing and updating the value and store key in variable and access it :
 
 var prop = 'name'
 
@@ -25,7 +25,7 @@ userOne[prop] = 'Ryuke';
 console.log(userOne);
 
 
-3_this will log all the value of object:
+// 3_this will log all the value of object:
 
 userOne.age = 25;
 userOne.logInfo = function(){
@@ -44,12 +44,12 @@ class user {
   
  }
 
-Constructor function and new 
-5_create a class and add method after constructor
-  -the "new" keyword
-  -create a new empty object {}
-  -sets the value of "this" to be the new empty object
-  -calls the constructor method
+// Constructor function and new 
+// 5_create a class and add method after constructor
+//   -the "new" keyword
+//   -create a new empty object {}
+//   -sets the value of "this" to be the new empty object
+//   -calls the constructor method
   
  class User {
     constructor(email, name){
@@ -70,8 +70,8 @@ var userTwo = new User('yoshi@mariokorp.com', 'Yoshi');
 userOne.login();
 userTwo.logout();
 
-Method Chaning
-6_method chaning means apply method one by one and this is only possible threw return this in methods (return this) otherwise it give error:
+// Method Chaning
+// 6_method chaning means apply method one by one and this is only possible threw return this in methods (return this) otherwise it give error:
 
 class User {
     constructor(email, name){
@@ -102,8 +102,8 @@ userOne.login().updateScore().updateScore().logout(); //method chaining
 console.log(userOne);
 
 
-Class Inheritance
-7_we can extend the class and give extra methods to it:
+// Class Inheritance
+// 7_we can extend the class and give extra methods to it:
 
 class User {
     constructor(email, name){
@@ -146,8 +146,8 @@ userTwo.deleteUser(userOne); // won't work
 console.log(users);
 
 
-Constructors (under the hood)
-8_create with function:
+// Constructors (under the hood)
+// 8_create with function:
 
 function User(email, name){
     this.email = email;
@@ -164,8 +164,8 @@ var userTwo = new User('yoshi@mariokorp.com', 'Yoshi');
 console.log(userOne);
 userTwo.login();
 
-Prototype __proto__
-9_add method and inbulit function in javascript use prototype:
+// Prototype __proto__
+// 9_add method and inbulit function in javascript use prototype:
 
 function User(email, name){
     this.email = email;
@@ -189,8 +189,8 @@ var userTwo = new User('yoshi@mariokorp.com', 'Yoshi');
 console.log(userOne);
 userTwo.login();
 
-Prototype Inheritance
-10_
+// Prototype Inheritance
+// 10_
 
 function User(email, name){
     this.email = email;
